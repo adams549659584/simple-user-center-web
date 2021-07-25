@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-user-center-web
+  name: simple-user-center-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-user-center-web
+  template:
+    metadata:
+      labels:
+        app: simple-user-center-web
+    spec:
+      containers:
+          - image: canyuegongzi/simple-user-center-web:1.5
+            imagePullPolicy: IfNotPresent
+            name: simple-user-center-web

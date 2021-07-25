@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: simple-user-center-web-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /simple-user-center-web
+            pathType: Prefix
+            backend:
+              serviceName: simple-user-center-web-service
+              servicePort: 8046

@@ -184,16 +184,16 @@ export const taskConfigApi = {
     url: '/task/taskConfig/email/del',
   },
   info: {
-    method: 'get',
-    url: '/task/taskConfig/email/list',
+    method: 'post',
+    url: '/taskConfig/email/list',
   },
   list: {
-    method: 'get',
-    url: '/task/taskConfig/email/list',
+    method: 'post',
+    url: 'taskConfig/email/list',
   },
   defaultList: {
     method: 'post',
-    url: '/task/taskConfig/default/list'
+    url: '/taskConfig/common/default/list'
   },
   tree: {
     method: 'get',
@@ -218,8 +218,8 @@ export const taskMessageConfigApi = {
     url: '/task/taskConfig/message/list',
   },
   list: {
-    method: 'get',
-    url: '/task/taskConfig/message/list',
+    method: 'post',
+    url: '/taskConfig/message/list',
   },
   tree: {
     method: 'get',
