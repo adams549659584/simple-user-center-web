@@ -15,6 +15,6 @@ spec:
         app: simple-user-center-web
     spec:
       containers:
-          - image: canyuegongzi/simple-user-center-web:1.5
+          - image: canyuegongzi/simple-user-center-web:1.7
             imagePullPolicy: IfNotPresent
             name: simple-user-center-web
